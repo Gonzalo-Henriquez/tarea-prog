@@ -56,8 +56,8 @@
         // Suma 'a' y 'b', resta 'b' de 'a', multiplica 'a' por 'b', y divide 'a' entre 'b'.
         // Muestra los resultados en un mensaje.
         function realizarOperaciones() {
-            let a = prompt('ingresar valor numerico')
-            let b = prompt('ingresar otro valor numerico')
+            let a = parseInt(prompt('ingresar valor numerico'));
+            let b = parseInt(prompt('ingresar otro valor numerico'));
             let suma = (a + b);
             let resta = (a - b);
             let multi = (a * b);
@@ -74,7 +74,7 @@
             let nombre = prompt('ingrese su nombre');
             let apellido = prompt('ingrese su apellido');
             let mensaje = "mi nombre es " + nombre + " y mi apellido es " + apellido;
-            let longitud = mensaje.length
+            let longitud = nombre.length + apellido.length
             alert(mensaje + ' \ny la longitud del mensaje es ' + longitud)
             // Tu código aquí
         }
